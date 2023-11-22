@@ -40,7 +40,7 @@ In this laboratory we examine loop optimisations.
 
 ### Usage
 There is a code framework `sobel_main.c` around the sobel algorithm code, `sobel_algo.c`, that is used to call the algorithm implementation in a rich operating system, in this case Linux, so we can use features of the OS that are not available in a bare metal target system.
-This framework code is structured to enable multiple runs of the sobel algorithm and measure time taken for each execution run. This code generates a comma separated value file with teh execution times that can be imported into a program like Excel for graphical analysis.
+This framework code is structured to enable multiple runs of the sobel algorithm and measure time taken for each execution run. This code generates a comma separated value file with the execution times that can be imported into a program like Excel for graphical analysis.
 
 We shall also be using the gnu profiler which we kick off using the command line 
 ```bash
@@ -84,6 +84,7 @@ Inline the `sobel_mac` code as explained in the lectures - be prepared to answer
 #### Task 3 (1P): Automated Loop Unrolling
 Revert to the original sobel_algo code and compile using compiler switches for loop unrolling and inlining. 
 Compare the results to those achieved above
+
 -----
 
 ## Laboratory 3 (6P)
@@ -101,6 +102,7 @@ https://developer.arm.com/documentation/dui0491/i/ARMv6-SIMD-Instruction-Intrins
 Implement the sobel algorithm, starting from the naive code, using vector instructions. 
 Follow the processes learned so far. Be prepared to defend your results.
 Vector instruction programing becomes a data-flow problem very quickly so use data-flow analysis tools to plan your implementation. 
+
 -----
 ## Laboratory 4 (5P)
 In this laboratory we examine the use of cache and prefetching instructions
