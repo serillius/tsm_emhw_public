@@ -27,6 +27,6 @@
 #ifndef WRITE_CSV
 #   define WRITE_CSV
 
-void write_csv ( int const *, int );
+void write_csv ( double const *, int );
 
 #endif

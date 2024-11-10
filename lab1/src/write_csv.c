@@ -34,7 +34,7 @@
 #define INT_ARRAY 255
 
 // check if the file is empty if not include header for R
-void write_csv ( int const *in_array, int num_measurement ) {
+void write_csv (double const *in_array, int num_measurement ) {
     // reserrve memory for an error string
     char char_string[CHAR_ARRAY];
     char temp_string[CHAR_ARRAY];
@@ -71,7 +71,7 @@ void write_csv ( int const *in_array, int num_measurement ) {
     
     // copy data into file
     for ( int i=0; i < num_measurement; i++ ) {
-        (void) fprintf( fp, "%d,", in_array[i]);   
+        (void) fprintf( fp, "%f,", in_array[i]);   
     }
     // write it out to file
     (void) fprintf ( fp, "\n");

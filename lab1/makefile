@@ -11,7 +11,7 @@ CC   := gcc -std=gnu99 -pg
 LD   := $(CC)
 LINT := flint
 
-CFLAGS  := -g3 -O0 -Wall -Wextra -pedantic # -Werror, commentd out because the image library has a strange warning  which is then converted to an error
+CFLAGS  := -g3 -O0 -Wall -Wextra -pedantic -mssse3 # -Werror, commentd out because the image library has a strange warning  which is then converted to an error
 LDFLAGS := -static
 SLFLAGS := -fPIC - shared
 
@@ -84,7 +84,7 @@ LNT_OUT_DIR := ./lnt-out
 # But only the module file names, without path
 # specification. See $(VPATH) below.
 # #
-SRC := sobel_main.c sobel_rgb2g.c write_csv.c sobel_algo_answer.c
+SRC := sobel_main.c sobel_rgb2g.c write_csv.c sobel_algo.c
 
 OBJ := $(addprefix $(OBJDIR)/, $(SRC:.c=.o))
 BINARY := $(BINDIR)/fancy-calc

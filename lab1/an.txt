@@ -1,0 +1,568 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 21.26      0.27     0.27       10     0.03     0.07  stbi_zlib_compress
+ 20.47      0.53     0.26 26573750     0.00     0.00  stbiw__zlib_countm
+ 12.99      0.69     0.17    26760     0.00     0.00  stbiw__encode_png_line
+  7.09      0.79     0.09  6163720     0.00     0.00  sobel_mac
+  5.12      0.85     0.07  3769240     0.00     0.00  stbiw__zlib_bitrev
+  3.94      0.90     0.05      160     0.00     0.00  stbi__parse_huffman_block
+  3.94      0.95     0.05       10     0.01     0.09  stbi_write_png_to_mem
+  3.54      0.99     0.04  5546780     0.00     0.00  stbiw__zlib_flushf
+  3.15      1.03     0.04  7256250     0.00     0.00  stbi__zhuffman_decode
+  2.36      1.06     0.03       10     0.00     0.00  rgb2grayscale
+  2.36      1.09     0.03                             __memcpy_avx_unaligned_erms
+  1.97      1.12     0.03 17433900     0.00     0.00  stbiw__paeth
+  1.57      1.14     0.02 10033520     0.00     0.00  stbi__zeof
+  1.57      1.16     0.02  3904390     0.00     0.00  stbiw__zhash
+  1.57      1.18     0.02  2115840     0.00     0.00  stbi__zreceive
+  1.57      1.20     0.02       30     0.00     0.00  stbiw__crc32
+  1.57      1.22     0.02       10     0.00     0.00  sobel_sum
+  1.57      1.24     0.02       10     0.00     0.01  sobel_x
+  0.79      1.25     0.01  6976700     0.00     0.00  stbi__zget8
+  0.79      1.26     0.01  6163720     0.00     0.00  abs_max_uint8
+  0.79      1.27     0.01  3071530     0.00     0.00  stbi__fill_bits
+  0.00      1.27     0.00   362870     0.00     0.00  stbi__bit_reverse
+  0.00      1.27     0.00   362870     0.00     0.00  stbi__bitreverse16
+  0.00      1.27     0.00   334230     0.00     0.00  stbi__zhuffman_decode_slowpath
+  0.00      1.27     0.00    40190     0.00     0.00  stbiw__sbgrowf
+  0.00      1.27     0.00     2220     0.00     0.00  stbi__get8
+  0.00      1.27     0.00     1000     0.00     0.00  stbi__get16be
+  0.00      1.27     0.00      500     0.00     0.00  stbi__get32be
+  0.00      1.27     0.00      480     0.00     0.00  stbi__zbuild_huffman
+  0.00      1.27     0.00      230     0.00     0.00  stbi__stdio_read
+  0.00      1.27     0.00      160     0.00     0.00  stbi__compute_huffman_codes
+  0.00      1.27     0.00      160     0.00     0.00  stbi__get_chunk_header
+  0.00      1.27     0.00      120     0.00     0.00  stbi__refill_buffer
+  0.00      1.27     0.00      110     0.00     0.00  stbi__getn
+  0.00      1.27     0.00       60     0.00     0.00  stbi__mul2sizes_valid
+  0.00      1.27     0.00       40     0.00     0.00  stbi__malloc
+  0.00      1.27     0.00       30     0.00     0.00  stbi__addsizes_valid
+  0.00      1.27     0.00       30     0.00     0.00  stbi__mad3sizes_valid
+  0.00      1.27     0.00       30     0.00     0.00  stbi__skip
+  0.00      1.27     0.00       30     0.00     0.00  stbiw__wpcrc
+  0.00      1.27     0.00       20     0.00     0.00  stbi__check_png_header
+  0.00      1.27     0.00       20     0.00     0.00  stbi__malloc_mad3
+  0.00      1.27     0.00       20     0.00     0.00  stbi__rewind
+  0.00      1.27     0.00       10     0.00     0.01  sobel_y
+  0.00      1.27     0.00       10     0.00     0.00  stbi__convert_format
+  0.00      1.27     0.00       10     0.00     0.00  stbi__create_png_image
+  0.00      1.27     0.00       10     0.00     0.00  stbi__create_png_image_raw
+  0.00      1.27     0.00       10     0.00     0.00  stbi__decode_jpeg_header
+  0.00      1.27     0.00       10     0.00     0.01  stbi__do_png
+  0.00      1.27     0.00       10     0.00     0.01  stbi__do_zlib
+  0.00      1.27     0.00       10     0.00     0.00  stbi__err
+  0.00      1.27     0.00       10     0.00     0.00  stbi__fopen
+  0.00      1.27     0.00       10     0.00     0.00  stbi__get_marker
+  0.00      1.27     0.00       10     0.00     0.00  stbi__jpeg_test
+  0.00      1.27     0.00       10     0.00     0.01  stbi__load_and_postprocess_8bit
+  0.00      1.27     0.00       10     0.00     0.01  stbi__load_main
+  0.00      1.27     0.00       10     0.00     0.01  stbi__parse_png_file
+  0.00      1.27     0.00       10     0.00     0.01  stbi__parse_zlib
+  0.00      1.27     0.00       10     0.00     0.00  stbi__parse_zlib_header
+  0.00      1.27     0.00       10     0.00     0.01  stbi__png_load
+  0.00      1.27     0.00       10     0.00     0.00  stbi__png_test
+  0.00      1.27     0.00       10     0.00     0.00  stbi__setup_jpeg
+  0.00      1.27     0.00       10     0.00     0.00  stbi__sse2_available
+  0.00      1.27     0.00       10     0.00     0.00  stbi__start_callbacks
+  0.00      1.27     0.00       10     0.00     0.00  stbi__start_file
+  0.00      1.27     0.00       10     0.00     0.01  stbi_load
+  0.00      1.27     0.00       10     0.00     0.01  stbi_load_from_file
+  0.00      1.27     0.00       10     0.00     0.09  stbi_write_png
+  0.00      1.27     0.00       10     0.00     0.01  stbi_zlib_decode_malloc_guesssize_headerflag
+  0.00      1.27     0.00       10     0.00     0.00  stbiw__fopen
+  0.00      1.27     0.00        1     0.00     1.24  main
+  0.00      1.27     0.00        1     0.00     0.00  write_csv
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.79% of 1.27 seconds
+
+index % time    self  children    called     name
+                0.00    1.24       1/1           __libc_start_call_main [2]
+[1]     97.6    0.00    1.24       1         main [1]
+                0.00    0.92      10/10          stbi_write_png [3]
+                0.00    0.15      10/10          stbi_load [15]
+                0.02    0.05      10/10          sobel_x [21]
+                0.00    0.05      10/10          sobel_y [23]
+                0.03    0.00      10/10          rgb2grayscale [26]
+                0.02    0.00      10/10          sobel_sum [35]
+                0.00    0.00       1/1           write_csv [73]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     97.6    0.00    1.24                 __libc_start_call_main [2]
+                0.00    1.24       1/1           main [1]
+-----------------------------------------------
+                0.00    0.92      10/10          main [1]
+[3]     72.4    0.00    0.92      10         stbi_write_png [3]
+                0.05    0.87      10/10          stbi_write_png_to_mem [4]
+                0.00    0.00      10/10          stbiw__fopen [72]
+-----------------------------------------------
+                0.05    0.87      10/10          stbi_write_png [3]
+[4]     72.4    0.05    0.87      10         stbi_write_png_to_mem [4]
+                0.27    0.39      10/10          stbi_zlib_compress [5]
+                0.17    0.03   26760/26760       stbiw__encode_png_line [7]
+                0.00    0.02      30/30          stbiw__wpcrc [34]
+-----------------------------------------------
+                0.27    0.39      10/10          stbi_write_png_to_mem [4]
+[5]     52.0    0.27    0.39      10         stbi_zlib_compress [5]
+                0.26    0.00 26573750/26573750     stbiw__zlib_countm [6]
+                0.07    0.00 3769240/3769240     stbiw__zlib_bitrev [22]
+                0.04    0.00 5546780/5546780     stbiw__zlib_flushf [24]
+                0.02    0.00 3904390/3904390     stbiw__zhash [32]
+                0.00    0.00   40020/40190       stbiw__sbgrowf [42]
+-----------------------------------------------
+                0.26    0.00 26573750/26573750     stbi_zlib_compress [5]
+[6]     20.5    0.26    0.00 26573750         stbiw__zlib_countm [6]
+-----------------------------------------------
+                0.17    0.03   26760/26760       stbi_write_png_to_mem [4]
+[7]     15.0    0.17    0.03   26760         stbiw__encode_png_line [7]
+                0.03    0.00 17433900/17433900     stbiw__paeth [28]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi__png_load [14]
+[8]     11.8    0.00    0.15      10         stbi__do_png [8]
+                0.00    0.15      10/10          stbi__parse_png_file [12]
+                0.00    0.00      10/10          stbi__convert_format [59]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi_zlib_decode_malloc_guesssize_headerflag [17]
+[9]     11.8    0.00    0.15      10         stbi__do_zlib [9]
+                0.00    0.15      10/10          stbi__parse_zlib [13]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi_load_from_file [16]
+[10]    11.8    0.00    0.15      10         stbi__load_and_postprocess_8bit [10]
+                0.00    0.15      10/10          stbi__load_main [11]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi__load_and_postprocess_8bit [10]
+[11]    11.8    0.00    0.15      10         stbi__load_main [11]
+                0.00    0.15      10/10          stbi__png_load [14]
+                0.00    0.00      10/10          stbi__jpeg_test [66]
+                0.00    0.00      10/10          stbi__png_test [67]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi__do_png [8]
+[12]    11.8    0.00    0.15      10         stbi__parse_png_file [12]
+                0.00    0.15      10/10          stbi_zlib_decode_malloc_guesssize_headerflag [17]
+                0.00    0.00     180/500         stbi__get32be [45]
+                0.00    0.00     160/160         stbi__get_chunk_header [48]
+                0.00    0.00     110/110         stbi__getn [50]
+                0.00    0.00      50/2220        stbi__get8 [43]
+                0.00    0.00      30/30          stbi__skip [55]
+                0.00    0.00      10/20          stbi__check_png_header [56]
+                0.00    0.00      10/10          stbi__create_png_image [60]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi__do_zlib [9]
+[13]    11.8    0.00    0.15      10         stbi__parse_zlib [13]
+                0.05    0.10     160/160         stbi__parse_huffman_block [18]
+                0.00    0.00     160/160         stbi__compute_huffman_codes [37]
+                0.00    0.00     320/2115840     stbi__zreceive [30]
+                0.00    0.00      10/10          stbi__parse_zlib_header [38]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi__load_main [11]
+[14]    11.8    0.00    0.15      10         stbi__png_load [14]
+                0.00    0.15      10/10          stbi__do_png [8]
+-----------------------------------------------
+                0.00    0.15      10/10          main [1]
+[15]    11.8    0.00    0.15      10         stbi_load [15]
+                0.00    0.15      10/10          stbi_load_from_file [16]
+                0.00    0.00      10/10          stbi__fopen [64]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi_load [15]
+[16]    11.8    0.00    0.15      10         stbi_load_from_file [16]
+                0.00    0.15      10/10          stbi__load_and_postprocess_8bit [10]
+                0.00    0.00      10/10          stbi__start_file [71]
+-----------------------------------------------
+                0.00    0.15      10/10          stbi__parse_png_file [12]
+[17]    11.8    0.00    0.15      10         stbi_zlib_decode_malloc_guesssize_headerflag [17]
+                0.00    0.15      10/10          stbi__do_zlib [9]
+                0.00    0.00      10/40          stbi__malloc [52]
+-----------------------------------------------
+                0.05    0.10     160/160         stbi__parse_zlib [13]
+[18]    11.8    0.05    0.10     160         stbi__parse_huffman_block [18]
+                0.04    0.04 7227830/7256250     stbi__zhuffman_decode [20]
+                0.02    0.00 2107430/2115840     stbi__zreceive [30]
+-----------------------------------------------
+                0.04    0.00 3081860/6163720     sobel_x [21]
+                0.04    0.00 3081860/6163720     sobel_y [23]
+[19]     7.1    0.09    0.00 6163720         sobel_mac [19]
+-----------------------------------------------
+                0.00    0.00   28420/7256250     stbi__compute_huffman_codes [37]
+                0.04    0.04 7227830/7256250     stbi__parse_huffman_block [18]
+[20]     6.3    0.04    0.04 7256250         stbi__zhuffman_decode [20]
+                0.01    0.02 3056810/3071530     stbi__fill_bits [25]
+                0.01    0.00 3056810/10033520     stbi__zeof [31]
+                0.00    0.00  334230/334230      stbi__zhuffman_decode_slowpath [41]
+-----------------------------------------------
+                0.02    0.05      10/10          main [1]
+[21]     5.5    0.02    0.05      10         sobel_x [21]
+                0.04    0.00 3081860/6163720     sobel_mac [19]
+                0.01    0.00 3081860/6163720     abs_max_uint8 [36]
+-----------------------------------------------
+                0.07    0.00 3769240/3769240     stbi_zlib_compress [5]
+[22]     5.1    0.07    0.00 3769240         stbiw__zlib_bitrev [22]
+-----------------------------------------------
+                0.00    0.05      10/10          main [1]
+[23]     3.9    0.00    0.05      10         sobel_y [23]
+                0.04    0.00 3081860/6163720     sobel_mac [19]
+                0.01    0.00 3081860/6163720     abs_max_uint8 [36]
+-----------------------------------------------
+                0.04    0.00 5546780/5546780     stbi_zlib_compress [5]
+[24]     3.5    0.04    0.00 5546780         stbiw__zlib_flushf [24]
+                0.00    0.00     170/40190       stbiw__sbgrowf [42]
+-----------------------------------------------
+                0.00    0.00   14720/3071530     stbi__zreceive [30]
+                0.01    0.02 3056810/3071530     stbi__zhuffman_decode [20]
+[25]     2.7    0.01    0.02 3071530         stbi__fill_bits [25]
+                0.01    0.01 6976680/6976700     stbi__zget8 [29]
+-----------------------------------------------
+                0.03    0.00      10/10          main [1]
+[26]     2.4    0.03    0.00      10         rgb2grayscale [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     2.4    0.03    0.00                 __memcpy_avx_unaligned_erms [27]
+-----------------------------------------------
+                0.03    0.00 17433900/17433900     stbiw__encode_png_line [7]
+[28]     2.0    0.03    0.00 17433900         stbiw__paeth [28]
+-----------------------------------------------
+                0.00    0.00      20/6976700     stbi__parse_zlib_header [38]
+                0.01    0.01 6976680/6976700     stbi__fill_bits [25]
+[29]     1.9    0.01    0.01 6976700         stbi__zget8 [29]
+                0.01    0.00 6976700/10033520     stbi__zeof [31]
+-----------------------------------------------
+                0.00    0.00     320/2115840     stbi__parse_zlib [13]
+                0.00    0.00    8090/2115840     stbi__compute_huffman_codes [37]
+                0.02    0.00 2107430/2115840     stbi__parse_huffman_block [18]
+[30]     1.6    0.02    0.00 2115840         stbi__zreceive [30]
+                0.00    0.00   14720/3071530     stbi__fill_bits [25]
+-----------------------------------------------
+                0.00    0.00      10/10033520     stbi__parse_zlib_header [38]
+                0.01    0.00 3056810/10033520     stbi__zhuffman_decode [20]
+                0.01    0.00 6976700/10033520     stbi__zget8 [29]
+[31]     1.6    0.02    0.00 10033520         stbi__zeof [31]
+-----------------------------------------------
+                0.02    0.00 3904390/3904390     stbi_zlib_compress [5]
+[32]     1.6    0.02    0.00 3904390         stbiw__zhash [32]
+-----------------------------------------------
+                0.02    0.00      30/30          stbiw__wpcrc [34]
+[33]     1.6    0.02    0.00      30         stbiw__crc32 [33]
+-----------------------------------------------
+                0.00    0.02      30/30          stbi_write_png_to_mem [4]
+[34]     1.6    0.00    0.02      30         stbiw__wpcrc [34]
+                0.02    0.00      30/30          stbiw__crc32 [33]
+-----------------------------------------------
+                0.02    0.00      10/10          main [1]
+[35]     1.6    0.02    0.00      10         sobel_sum [35]
+-----------------------------------------------
+                0.01    0.00 3081860/6163720     sobel_x [21]
+                0.01    0.00 3081860/6163720     sobel_y [23]
+[36]     0.8    0.01    0.00 6163720         abs_max_uint8 [36]
+-----------------------------------------------
+                0.00    0.00     160/160         stbi__parse_zlib [13]
+[37]     0.0    0.00    0.00     160         stbi__compute_huffman_codes [37]
+                0.00    0.00   28420/7256250     stbi__zhuffman_decode [20]
+                0.00    0.00    8090/2115840     stbi__zreceive [30]
+                0.00    0.00     480/480         stbi__zbuild_huffman [46]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__parse_zlib [13]
+[38]     0.0    0.00    0.00      10         stbi__parse_zlib_header [38]
+                0.00    0.00      20/6976700     stbi__zget8 [29]
+                0.00    0.00      10/10033520     stbi__zeof [31]
+-----------------------------------------------
+                0.00    0.00   28640/362870      stbi__zbuild_huffman [46]
+                0.00    0.00  334230/362870      stbi__zhuffman_decode_slowpath [41]
+[39]     0.0    0.00    0.00  362870         stbi__bit_reverse [39]
+                0.00    0.00  362870/362870      stbi__bitreverse16 [40]
+-----------------------------------------------
+                0.00    0.00  362870/362870      stbi__bit_reverse [39]
+[40]     0.0    0.00    0.00  362870         stbi__bitreverse16 [40]
+-----------------------------------------------
+                0.00    0.00  334230/334230      stbi__zhuffman_decode [20]
+[41]     0.0    0.00    0.00  334230         stbi__zhuffman_decode_slowpath [41]
+                0.00    0.00  334230/362870      stbi__bit_reverse [39]
+-----------------------------------------------
+                0.00    0.00     170/40190       stbiw__zlib_flushf [24]
+                0.00    0.00   40020/40190       stbi_zlib_compress [5]
+[42]     0.0    0.00    0.00   40190         stbiw__sbgrowf [42]
+-----------------------------------------------
+                0.00    0.00      10/2220        stbi__get_marker [65]
+                0.00    0.00      50/2220        stbi__parse_png_file [12]
+                0.00    0.00     160/2220        stbi__check_png_header [56]
+                0.00    0.00    2000/2220        stbi__get16be [44]
+[43]     0.0    0.00    0.00    2220         stbi__get8 [43]
+                0.00    0.00     110/120         stbi__refill_buffer [49]
+-----------------------------------------------
+                0.00    0.00    1000/1000        stbi__get32be [45]
+[44]     0.0    0.00    0.00    1000         stbi__get16be [44]
+                0.00    0.00    2000/2220        stbi__get8 [43]
+-----------------------------------------------
+                0.00    0.00     180/500         stbi__parse_png_file [12]
+                0.00    0.00     320/500         stbi__get_chunk_header [48]
+[45]     0.0    0.00    0.00     500         stbi__get32be [45]
+                0.00    0.00    1000/1000        stbi__get16be [44]
+-----------------------------------------------
+                0.00    0.00     480/480         stbi__compute_huffman_codes [37]
+[46]     0.0    0.00    0.00     480         stbi__zbuild_huffman [46]
+                0.00    0.00   28640/362870      stbi__bit_reverse [39]
+-----------------------------------------------
+                0.00    0.00     110/230         stbi__getn [50]
+                0.00    0.00     120/230         stbi__refill_buffer [49]
+[47]     0.0    0.00    0.00     230         stbi__stdio_read [47]
+-----------------------------------------------
+                0.00    0.00     160/160         stbi__parse_png_file [12]
+[48]     0.0    0.00    0.00     160         stbi__get_chunk_header [48]
+                0.00    0.00     320/500         stbi__get32be [45]
+-----------------------------------------------
+                0.00    0.00      10/120         stbi__start_callbacks [70]
+                0.00    0.00     110/120         stbi__get8 [43]
+[49]     0.0    0.00    0.00     120         stbi__refill_buffer [49]
+                0.00    0.00     120/230         stbi__stdio_read [47]
+-----------------------------------------------
+                0.00    0.00     110/110         stbi__parse_png_file [12]
+[50]     0.0    0.00    0.00     110         stbi__getn [50]
+                0.00    0.00     110/230         stbi__stdio_read [47]
+-----------------------------------------------
+                0.00    0.00      60/60          stbi__mad3sizes_valid [54]
+[51]     0.0    0.00    0.00      60         stbi__mul2sizes_valid [51]
+-----------------------------------------------
+                0.00    0.00      10/40          stbi__jpeg_test [66]
+                0.00    0.00      10/40          stbi_zlib_decode_malloc_guesssize_headerflag [17]
+                0.00    0.00      20/40          stbi__malloc_mad3 [57]
+[52]     0.0    0.00    0.00      40         stbi__malloc [52]
+-----------------------------------------------
+                0.00    0.00      30/30          stbi__mad3sizes_valid [54]
+[53]     0.0    0.00    0.00      30         stbi__addsizes_valid [53]
+-----------------------------------------------
+                0.00    0.00      10/30          stbi__create_png_image_raw [61]
+                0.00    0.00      20/30          stbi__malloc_mad3 [57]
+[54]     0.0    0.00    0.00      30         stbi__mad3sizes_valid [54]
+                0.00    0.00      60/60          stbi__mul2sizes_valid [51]
+                0.00    0.00      30/30          stbi__addsizes_valid [53]
+-----------------------------------------------
+                0.00    0.00      30/30          stbi__parse_png_file [12]
+[55]     0.0    0.00    0.00      30         stbi__skip [55]
+-----------------------------------------------
+                0.00    0.00      10/20          stbi__parse_png_file [12]
+                0.00    0.00      10/20          stbi__png_test [67]
+[56]     0.0    0.00    0.00      20         stbi__check_png_header [56]
+                0.00    0.00     160/2220        stbi__get8 [43]
+-----------------------------------------------
+                0.00    0.00      10/20          stbi__convert_format [59]
+                0.00    0.00      10/20          stbi__create_png_image_raw [61]
+[57]     0.0    0.00    0.00      20         stbi__malloc_mad3 [57]
+                0.00    0.00      20/30          stbi__mad3sizes_valid [54]
+                0.00    0.00      20/40          stbi__malloc [52]
+-----------------------------------------------
+                0.00    0.00      10/20          stbi__jpeg_test [66]
+                0.00    0.00      10/20          stbi__png_test [67]
+[58]     0.0    0.00    0.00      20         stbi__rewind [58]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__do_png [8]
+[59]     0.0    0.00    0.00      10         stbi__convert_format [59]
+                0.00    0.00      10/20          stbi__malloc_mad3 [57]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__parse_png_file [12]
+[60]     0.0    0.00    0.00      10         stbi__create_png_image [60]
+                0.00    0.00      10/10          stbi__create_png_image_raw [61]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__create_png_image [60]
+[61]     0.0    0.00    0.00      10         stbi__create_png_image_raw [61]
+                0.00    0.00      10/20          stbi__malloc_mad3 [57]
+                0.00    0.00      10/30          stbi__mad3sizes_valid [54]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__jpeg_test [66]
+[62]     0.0    0.00    0.00      10         stbi__decode_jpeg_header [62]
+                0.00    0.00      10/10          stbi__get_marker [65]
+                0.00    0.00      10/10          stbi__err [63]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__decode_jpeg_header [62]
+[63]     0.0    0.00    0.00      10         stbi__err [63]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi_load [15]
+[64]     0.0    0.00    0.00      10         stbi__fopen [64]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__decode_jpeg_header [62]
+[65]     0.0    0.00    0.00      10         stbi__get_marker [65]
+                0.00    0.00      10/2220        stbi__get8 [43]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__load_main [11]
+[66]     0.0    0.00    0.00      10         stbi__jpeg_test [66]
+                0.00    0.00      10/40          stbi__malloc [52]
+                0.00    0.00      10/10          stbi__setup_jpeg [68]
+                0.00    0.00      10/10          stbi__decode_jpeg_header [62]
+                0.00    0.00      10/20          stbi__rewind [58]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__load_main [11]
+[67]     0.0    0.00    0.00      10         stbi__png_test [67]
+                0.00    0.00      10/20          stbi__check_png_header [56]
+                0.00    0.00      10/20          stbi__rewind [58]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__jpeg_test [66]
+[68]     0.0    0.00    0.00      10         stbi__setup_jpeg [68]
+                0.00    0.00      10/10          stbi__sse2_available [69]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__setup_jpeg [68]
+[69]     0.0    0.00    0.00      10         stbi__sse2_available [69]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi__start_file [71]
+[70]     0.0    0.00    0.00      10         stbi__start_callbacks [70]
+                0.00    0.00      10/120         stbi__refill_buffer [49]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi_load_from_file [16]
+[71]     0.0    0.00    0.00      10         stbi__start_file [71]
+                0.00    0.00      10/10          stbi__start_callbacks [70]
+-----------------------------------------------
+                0.00    0.00      10/10          stbi_write_png [3]
+[72]     0.0    0.00    0.00      10         stbiw__fopen [72]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[73]     0.0    0.00    0.00       1         write_csv [73]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [27] __memcpy_avx_unaligned_erms [43] stbi__get8 (stb_image.h) [47] stbi__stdio_read (stb_image.h)
+  [36] abs_max_uint8          [48] stbi__get_chunk_header (stb_image.h) [46] stbi__zbuild_huffman (stb_image.h)
+   [1] main                   [65] stbi__get_marker (stb_image.h) [31] stbi__zeof (stb_image.h)
+  [26] rgb2grayscale          [50] stbi__getn (stb_image.h) [29] stbi__zget8 (stb_image.h)
+  [19] sobel_mac              [66] stbi__jpeg_test (stb_image.h) [20] stbi__zhuffman_decode (stb_image.h)
+  [35] sobel_sum              [10] stbi__load_and_postprocess_8bit (stb_image.h) [41] stbi__zhuffman_decode_slowpath (stb_image.h)
+  [21] sobel_x                [11] stbi__load_main (stb_image.h) [30] stbi__zreceive (stb_image.h)
+  [23] sobel_y                [54] stbi__mad3sizes_valid (stb_image.h) [15] stbi_load
+  [53] stbi__addsizes_valid (stb_image.h) [52] stbi__malloc (stb_image.h) [16] stbi_load_from_file
+  [39] stbi__bit_reverse (stb_image.h) [57] stbi__malloc_mad3 (stb_image.h) [3] stbi_write_png
+  [40] stbi__bitreverse16 (stb_image.h) [51] stbi__mul2sizes_valid (stb_image.h) [4] stbi_write_png_to_mem
+  [56] stbi__check_png_header (stb_image.h) [18] stbi__parse_huffman_block (stb_image.h) [5] stbi_zlib_compress
+  [37] stbi__compute_huffman_codes (stb_image.h) [12] stbi__parse_png_file (stb_image.h) [17] stbi_zlib_decode_malloc_guesssize_headerflag
+  [59] stbi__convert_format (stb_image.h) [13] stbi__parse_zlib (stb_image.h) [33] stbiw__crc32 (stb_image_write.h)
+  [60] stbi__create_png_image (stb_image.h) [38] stbi__parse_zlib_header (stb_image.h) [7] stbiw__encode_png_line (stb_image_write.h)
+  [61] stbi__create_png_image_raw (stb_image.h) [14] stbi__png_load (stb_image.h) [72] stbiw__fopen (stb_image_write.h)
+  [62] stbi__decode_jpeg_header (stb_image.h) [67] stbi__png_test (stb_image.h) [28] stbiw__paeth (stb_image_write.h)
+   [8] stbi__do_png (stb_image.h) [49] stbi__refill_buffer (stb_image.h) [42] stbiw__sbgrowf (stb_image_write.h)
+   [9] stbi__do_zlib (stb_image.h) [58] stbi__rewind (stb_image.h) [34] stbiw__wpcrc (stb_image_write.h)
+  [63] stbi__err (stb_image.h) [68] stbi__setup_jpeg (stb_image.h) [32] stbiw__zhash (stb_image_write.h)
+  [25] stbi__fill_bits (stb_image.h) [55] stbi__skip (stb_image.h) [22] stbiw__zlib_bitrev (stb_image_write.h)
+  [64] stbi__fopen (stb_image.h) [69] stbi__sse2_available (stb_image.h) [6] stbiw__zlib_countm (stb_image_write.h)
+  [44] stbi__get16be (stb_image.h) [70] stbi__start_callbacks (stb_image.h) [24] stbiw__zlib_flushf (stb_image_write.h)
+  [45] stbi__get32be (stb_image.h) [71] stbi__start_file (stb_image.h) [73] write_csv

@@ -54,7 +54,7 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
-#define NUM_MEASUREMENT 1
+#define NUM_MEASUREMENT 100
 
 #ifndef NUM_MEASUREMENT
 #   define NUM_MEASUREMENT 20
@@ -105,12 +105,15 @@ int main()
     	gry_image = malloc ( width * height * sizeof(uint8_t) );
     		
     	// reserve memory for sobel x and sobel y
-    	sobel_x_array = (int16_t *) malloc( (width -2 ) * (height - 2 ) * sizeof(int16_t) );
-    	sobel_y_array = (int16_t *) malloc( (width -2 ) * (height - 2 ) * sizeof(int16_t) );
+    	// sobel_x_array = (int16_t *) malloc( (width -2 ) * (height - 2 ) * sizeof(int16_t) );
+    	// sobel_y_array = (int16_t *) malloc( (width -2 ) * (height - 2 ) * sizeof(int16_t) );
+        sobel_x_array = (int16_t *) malloc( (width) * (height) * sizeof(int16_t) );
+    	sobel_y_array = (int16_t *) malloc( (width) * (height) * sizeof(int16_t) );
     	
     	// reserve memory for the final output array - png compatible
-    	sobel_final_array = (uint8_t *) malloc( (width-2) * (height-2) * 3 * sizeof(uint8_t) );
-    
+    	// sobel_final_array = (uint8_t *) malloc( (width-2) * (height-2) * 3 * sizeof(uint8_t) );
+        sobel_final_array = (uint8_t *) malloc( (width) * (height) * 3 * sizeof(uint8_t) );
+
     	// convert image to to greyscale
     	rgb2grayscale(width, height, rgb_image, gry_image);
     	
@@ -131,8 +134,12 @@ int main()
         clock_gettime(CLOCK_REALTIME, &start);
     	
     	// call sobel_x and sobel_y
-    	sobel_x(&x_par);
-        sobel_y(&y_par);
+    	// sobel_x_inline(&x_par);
+        // sobel_y_inline(&y_par);
+        sobel_x_smid(&x_par);
+        sobel_y_smid(&y_par);
+        // sobel_x(&x_par);
+        // sobel_y(&y_par);
 
         // add the results of sobel_x and sobel_y together
         sobel_sum(sobel_x_array, sobel_y_array, sobel_final_array, height, width);
